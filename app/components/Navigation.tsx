@@ -8,7 +8,7 @@ const routes = [
     { path: '/about', label: 'about' },
     { path: '/coaching', label: 'coaching' },
     { path: '/projects', label: 'projects' },
-    { path: '/blog', label: 'blog' },
+    { path: '/blog', label: 'blog', isHidden: true },
     { path: '/contact', label: 'contact' },
 ]
 
@@ -20,11 +20,12 @@ export default function Navigation() {
             <ul className='flex justify-between mb-14'>
                 {
                     routes.map(route => (
-                        <li key={route.path}>
-                            <SiteLink href={route.path} className={`text-xl !text-black ${pathname === route.path ? 'font-bold' : ''}`}>
-                                {route.label}
-                            </SiteLink>
-                        </li>
+                        route.isHidden ? null :
+                            <li key={route.path}>
+                                <SiteLink href={route.path} className={`text-xl !text-black ${pathname === route.path ? 'font-bold' : ''}`}>
+                                    {route.label}
+                                </SiteLink>
+                            </li>
                     ))
                 }
             </ul>
