@@ -2,21 +2,13 @@
 
 import { usePathname } from 'next/navigation';
 import SiteLink from './SiteLink';
-
-const routes = [
-    { path: '/', label: 'home' },
-    { path: '/about', label: 'about' },
-    { path: '/coaching', label: 'coaching' },
-    { path: '/projects', label: 'projects' },
-    { path: '/blog', label: 'blog', isHidden: true },
-    { path: '/contact', label: 'contact' },
-]
+import { NAVIGATION_ROUTES as routes } from '../utils/constants';
 
 export default function Navigation() {
     const pathname = usePathname();
 
     return (
-        <nav>
+        <nav className='hidden md:block'>
             <ul className='flex justify-between mb-14'>
                 {
                     routes.map(route => (
