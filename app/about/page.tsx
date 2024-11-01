@@ -2,6 +2,7 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import SiteLink from "../components/SiteLink";
 import { getDifferenceInYears } from "../utils";
+import { Metadata } from "next";
 
 const technicalSkills = [
     "TypeScript",
@@ -26,11 +27,16 @@ const companies = [
     { label: "MagicFlow", link: "https://magiclive.co.za/" }
 ]
 
+export const metadata: Metadata = {
+    title: "ShreyKumar.me | About",
+    description: "About Shrey Kumar",
+};
+
 export default function About() {
     return (
         <Layout>
             <p className="mb-10">Hello, world! I am Shrey, a Technical Lead, Senior Software Engineer with 5+ years of experience, Career Coach, Mentor and Dog Dad. I love to talk about technology, build cool things, lead teams and help make the world a better place.</p>
-            <Image src={"/images/main.jpg"} alt="Shrey" width={150} height={150} className="rounded-full mb-8" />
+            <Image src={"/images/main.jpg"} alt="Shrey" width={150} height={150} className="rounded-full mb-8 mx-auto md:mx-0 " />
             <p className="mb-2">I am down to learn anything, but here are my top strengths:</p>
             <ul className="mb-6">
                 {

@@ -6,7 +6,7 @@ export default function Layout({ className, children }: Readonly<{ className?: s
     return (
         <main>
             <MobileNavigation />
-            <div className={`w-3/4 mx-auto mt-20 ${className ?? ''}`}>
+            <div className={`w-3/4 mx-auto mt-28 md:mt-20 ${className ?? ''}`}>
                 <Navigation />
                 {children}
             </div>

@@ -9,7 +9,7 @@ const HamburgerToggle: React.FC<HamburgerToggleProps> = ({ isActive, toggleMenu 
     return (
         <div className='relative'>
             <button
-                className="z-10 w-3 h-3 cursor-pointer flex items-center justify-center ml-auto absolute right-10 -top-8"
+                className="z-10 w-3 h-3 cursor-pointer flex items-center justify-center ml-auto absolute right-10 -top-14"
                 onClick={toggleMenu}
                 aria-label="Hamburger Menu"
             >
