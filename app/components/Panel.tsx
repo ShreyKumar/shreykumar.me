@@ -11,7 +11,7 @@ export default function Panel({ imageSrc, description, links }: Readonly<PanelPr
     return (
         <div className="border border-gray-300 p-4 mb-5 rounded-lg flex flex-col md:flex-row items-center min-h-52">
             <Image src={imageSrc} alt="" width={250} height={100} />
-            <div className="flex flex-col ml-10 justify-between">
+            <div className="flex flex-col mt-6 md:mt-0 ml-0 md:ml-10 justify-between">
                 <p>{description}</p>
                 <div className="mt-5 flex flex-col lg:flex-row">
                     {
