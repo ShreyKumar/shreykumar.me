@@ -20,4 +20,4 @@ export default function SiteLink({ href, children, className, isExternal = false
             {isExternal && <img alt='' src="external.svg" className='inline-block filter-invert align-middle w-4 h-4 ml-1' />}
         </Link>
     );
-} //Test
+}
