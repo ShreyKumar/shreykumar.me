@@ -4,7 +4,7 @@ import Panel from "../components/Panel";
 
 const coachingPlaces = [
     {
-        imageSrc: "/images/cf_logo.png",
+        imageSrc: "/images/cf_logo.jpg",
         altText: "CareerFoundry logo",
         description: "As a Mentor on CareerFoundry, I am providing actionable guidance to career switchers of various backgrounds looking to transition into tech. I help them with their job search, portfolio and more. I've seen clients go from stocking shelves at grocery stores to landing 6 figure Software Engineer jobs.",
         links: [
@@ -16,7 +16,7 @@ const coachingPlaces = [
         altText: "Wizco logo",
         description: "Wizco is the premium online interview prep tool that helps candidates land their dream roles. Being part of the expert community, I've delivered over 30 mock interviews for candidates looking to get into top tech companies. Awarded the '2023 Top Performer' for truly excelling at my craft, I've helped Wizco land high value agreements like CareerBuilder, Toronto Metropolitan University and more.",
         links: [
-            { label: "Wizco.com", link: "https://www.wizco.com/" }
+            { label: "Wizco.io", link: "https://www.wizco.io/" }
         ]
     },
     {

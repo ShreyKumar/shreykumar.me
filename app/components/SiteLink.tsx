@@ -14,18 +14,10 @@ export default function SiteLink({ href, children, className, isExternal = false
         return <></>;
     }
 
-    if (isExternal) {
-        return (
-            <a href={href} className={`hover:underline text-blue-800 ${className ?? ''}`} target="_blank" rel="noopener noreferrer">
-                {children}
-                <img alt='' src="external.svg" className='inline-block align-middle w-4 h-4 ml-1' />
-            </a>
-        );
-    }
-
     return (
-        <Link href={href} className={`hover:underline text-blue-800 ${className ?? ''}`}>
+        <Link href={href} className={`underline text-inherit ${className ?? ''}`} {...(isExternal ? { rel: "noopener noreferrer", target: "_blank" } : {})}>
             {children}
+            {isExternal && <img alt='' src="external.svg" className='inline-block filter-invert align-middle w-4 h-4 ml-1' />}
         </Link>
     );
 }
