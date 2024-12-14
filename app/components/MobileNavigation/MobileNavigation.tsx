@@ -25,7 +25,7 @@ const MobileNavigation: React.FC = () => {
                             routes.map(route => (
                                 route.isHidden ? null :
                                     <li key={route.path}>
-                                        <SiteLink href={route.path} className={`text-xl !text-black ${pathname === route.path ? 'font-bold' : ''}`}>
+                                        <SiteLink href={route.path} className={`text-xl no-underline hover:underline !text-black ${pathname === route.path ? 'font-bold' : ''}`}>
                                             {route.label}
                                         </SiteLink>
                                     </li>

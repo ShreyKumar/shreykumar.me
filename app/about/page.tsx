@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <Layout>
-            <p className="mb-10">Hello, world! I am Shrey, a Technical Lead, Senior Software Engineer with 5+ years of experience, Career Coach, Mentor and Dog Dad. I love to talk about technology, build cool things, lead teams and help make the world a better place. I'm often considered to be a Subject Matter Expert in Next.js and known to be able to come up with </p>
+            <p className="mb-10">Hello, world! I am Shrey, a Technical Lead, Senior Software Engineer with 5+ years of experience, Career Coach, Mentor and Dog Dad. I love to talk about technology, build cool things, lead teams and help make the world a better place. I'm considered to be a Subject Matter Expert in Next.js and known to be able to come up with innovative solutions to highly complex technical problems</p>
             <Image src={"/images/main.jpg"} alt="Shrey" width={150} height={150} className="rounded-full mb-8 mx-auto md:mx-0 " />
             <p className="mb-2">I am down to learn anything, but here are my top strengths:</p>
             <ul className="mb-6">
@@ -53,9 +53,10 @@ export default function About() {
                     companies.map(company => (
                         <li key={company.label} className="inline-block">
                             <SiteLink
-                                className="border border-purple-900 bg-blue-200 text-blue-700 px-5 py-1 mr-2 mb-2 text-center inline-block rounded hover:no-underline"
+                                className="border border-purple-900 bg-blue-200 !text-black px-5 py-1 mr-2 mb-2 text-center inline-block rounded no-underline hover:underline"
                                 href={company.link}
                                 isExternal
+                                externalClassName="dark:filter-none"
                             >
                                 {company.label}
                             </SiteLink>

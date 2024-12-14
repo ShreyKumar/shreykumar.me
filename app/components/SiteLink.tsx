@@ -6,18 +6,19 @@ interface SiteLinkProps {
     children: ReactNode;
     className?: string;
     isExternal?: boolean;
+    externalClassName?: string;
     isHidden?: boolean
 }
 
-export default function SiteLink({ href, children, className, isExternal = false, isHidden = false }: SiteLinkProps) {
+export default function SiteLink({ href, children, className, isExternal = false, externalClassName, isHidden = false }: SiteLinkProps) {
     if (isHidden) {
         return <></>;
     }
 
     return (
-        <Link href={href} className={`underline text-inherit ${className ?? ''}`} {...(isExternal ? { rel: "noopener noreferrer", target: "_blank" } : {})}>
+        <Link href={href} className={`underline inline-block text-inherit ${className ?? ''}`} {...(isExternal ? { rel: "noopener noreferrer", target: "_blank" } : {})}>
             {children}
-            {isExternal && <img alt='' src="external.svg" className='inline-block filter-invert align-middle w-4 h-4 ml-1' />}
+            {isExternal && <img alt='' src="external.svg" className={`inline-block dark:filter-invert align-middle w-4 h-4 ml-1 ${externalClassName ?? ''}`} />}
         </Link>
     );
 }

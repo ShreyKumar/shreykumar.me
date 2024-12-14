@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+    darkMode: "media",
     content: [
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -23,7 +24,7 @@ const config: Config = {
     },
     variants: {
         extend: {
-            filter: ['responsive', 'hover'],
+            filter: ['responsive', 'hover', 'group-hover'],
         },
     },
     plugins: [
@@ -31,6 +32,9 @@ const config: Config = {
             const newUtilities = {
                 '.filter-invert': {
                     filter: 'invert(1)',
+                },
+                '.filter-none': {
+                    filter: 'none',
                 },
             };
             addUtilities(newUtilities, ['responsive', 'hover']);

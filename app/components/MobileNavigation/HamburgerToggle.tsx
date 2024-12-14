@@ -14,15 +14,15 @@ const HamburgerToggle: React.FC<HamburgerToggleProps> = ({ isActive, toggleMenu 
                 aria-label="Hamburger Menu"
             >
                 <span
-                    className={`absolute w-10 h-[3px] bg-black transition-transform duration-500 ease-in-out ${isActive ? 'rotate-[30deg]' : '-translate-y-3'
+                    className={`absolute w-10 h-[3px] bg-black dark:bg-white ${isActive ? 'dark:bg-black' : ''} transition-transform duration-500 ease-in-out ${isActive ? 'rotate-[30deg]' : '-translate-y-3'
                         }`}
                 ></span>
                 <span
-                    className={`absolute w-10 h-[3px] bg-black transition-transform duration-500 ease-in-out ${isActive ? 'rotate-[90deg]' : 'translate-y-0'
+                    className={`absolute w-10 h-[3px] bg-black dark:bg-white ${isActive ? 'dark:bg-black' : ''} transition-transform duration-500 ease-in-out ${isActive ? 'rotate-[90deg]' : 'translate-y-0'
                         }`}
                 ></span>
                 <span
-                    className={`absolute w-10 h-[3px] bg-black transition-transform duration-500 ease-in-out ${isActive ? 'rotate-[150deg]' : 'translate-y-3'
+                    className={`absolute w-10 h-[3px] bg-black dark:bg-white ${isActive ? 'dark:bg-black' : ''} transition-transform duration-500 ease-in-out ${isActive ? 'rotate-[150deg]' : 'translate-y-3'
                         }`}
                 ></span>
             </button>
