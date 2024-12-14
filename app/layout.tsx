@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next" //eslint-disable-line
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
@@ -25,6 +25,7 @@ export default function RootLayout({
                 className={`${montserrat.variable} antialiased`}
             >
                 {children}
+                <SpeedInsights />
             </body>
         </html>
     );
