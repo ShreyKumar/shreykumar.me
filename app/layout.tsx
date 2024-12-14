@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next";
 import { Montserrat } from "next/font/google";
@@ -9,11 +8,6 @@ const montserrat = Montserrat({
     weight: ['400', '500', '700'], // Specify font weights you need
     variable: '--font-montserrat', // Define a custom CSS variable for easy usage
 });
-
-export const metadata: Metadata = {
-    title: "ShreyKumar.me | Home",
-    description: "Shrey Kumar's personal website. Shrey is a Technical Lead, Senior Software Engineer, Career Coach and Mentor with 5+ years of experience.",
-};
 
 export default function RootLayout({
     children,

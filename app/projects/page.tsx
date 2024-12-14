@@ -6,6 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "ShreyKumar.me | Projects",
     description: "Shrey's projects",
+    keywords: "Full-Stack Software Projects Showcase Javascript React Next.js TypeScript",
 };
 
 export default function Projects() {
