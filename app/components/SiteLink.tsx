@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ReactNode } from 'react';
+import External from './External';
 
 interface SiteLinkProps {
     href: string;
@@ -18,7 +19,7 @@ export default function SiteLink({ href, children, className, isExternal = false
     return (
         <Link href={href} className={`underline inline-block text-inherit ${className ?? ''}`} {...(isExternal ? { rel: "noopener noreferrer", target: "_blank" } : {})}>
             {children}
-            {isExternal && <img alt='' src="external.svg" className={`inline-block dark:filter-invert align-middle w-4 h-4 ml-1 ${externalClassName ?? ''}`} />}
+            {isExternal && <External className={`inline-block dark:filter-invert align-middle w-4 h-4 ml-1 ${externalClassName ?? ''}`} />}
         </Link>
     );
 }

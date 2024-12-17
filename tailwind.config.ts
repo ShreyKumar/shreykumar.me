@@ -19,7 +19,15 @@ const config: Config = {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
                 'white-transparent': "rgba(255, 255, 255, 0.95)",
+                'hunyadi-yellow': "#E8AC41",
+                'golden-brown': "#7F5610",
+                'olivine': "#97AE6F",
+                'moss-green': "#424E2C",
+                'black-olive': "#2B3121"
             },
+            spacing: {
+                '0.5px': '0.5px',
+            }
         },
     },
     variants: {

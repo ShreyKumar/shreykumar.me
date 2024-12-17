@@ -14,7 +14,7 @@ const coachingPlaces = [
     {
         imageSrc: "/images/wizco_logo.png",
         altText: "Wizco logo",
-        description: "Wizco is the premium online interview prep tool that helps candidates land their dream roles. Being part of the expert community, I've delivered over 30 mock interviews for candidates looking to get into top tech companies. Awarded the '2023 Top Performer' for truly excelling at my craft, I've helped Wizco land high value agreements like CareerBuilder, Toronto Metropolitan University and more.",
+        description: "Wizco is the premium online interview prep tool that helps candidates land their dream roles. Being part of the expert community, I've delivered over 30 mock interviews for candidates looking to get into top tech companies. Awarded the '2023 Top Performer' for truly excelling at my craft, I've helped Wizco land high value training agreements like CareerBuilder, Toronto Metropolitan University and more.",
         links: [
             { label: "Wizco.io", link: "https://www.wizco.io/" }
         ]
@@ -40,7 +40,7 @@ export default function Coaching() {
     return (
         <Layout>
             <p className="mb-12">I've helped over 100 people land their dream jobs, get into their top universities and more. I'm skilled at building client relationships, upskilling others and helping them reach their true potential. My coach rating has consistently been very high on multiple platforms.</p>
-            <h2 className="mb-8">Here are some of the places I coach:</h2>
+            <h2 className="mb-8">Here are some of the places I have coached:</h2>
             {
                 coachingPlaces.map(place => (
                     <Panel key={place.imageSrc} imageSrc={place.imageSrc} description={place.description} links={place.links} />

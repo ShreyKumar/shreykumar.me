@@ -35,28 +35,28 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <Layout>
-            <p className="mb-10">Hello, world! I am Shrey, a Technical Lead, Senior Software Engineer with 5+ years of experience, Career Coach, Mentor and Dog Dad. I love to talk about technology, build cool things, lead teams and help make the world a better place. I'm considered to be a Subject Matter Expert in Next.js and known to be able to come up with innovative solutions to highly complex technical problems</p>
+            <p className="mb-10">Hello, world! I am Shrey, a Technical Lead, Senior Software Engineer with 5+ years of experience, Career Coach, Mentor and Dog Dad. I love to talk about technology, build cool things, lead teams and help make the world a better place. I'm considered to be a Subject Matter Expert in Next.js and known to be able to come up with innovative solutions to highly complex technical problems.</p>
             <Image src={"/images/main.jpg"} alt="Shrey" width={150} height={150} className="rounded-full mb-8 mx-auto md:mx-0 " />
             <p className="mb-2">I am down to learn anything, but here are my top strengths:</p>
             <ul className="mb-6">
                 {
                     technicalSkills.map(skill => (
-                        <li key={skill} className="border border-purple-900 bg-purple-200 text-purple-700 px-5 py-1 mr-2 mb-2 text-center inline-block rounded">{skill}</li>
+                        <li key={skill} className="border border-golden-brown bg-hunyadi-yellow text-golden-brown px-5 py-1 mr-2 mb-2 text-center inline-block rounded">{skill}</li>
                     ))
                 }
             </ul>
 
-            <p>I've worked at numerous companies most recently in e-commerce, and have been programming since I was 14 years old. In fact, my earliest internship was more than {`${getDifferenceInYears(new Date('2013-08'), new Date())}`} years ago. <SiteLink href="https://www.linkedin.com/in/shreykumar/details/experience/" isExternal>More on that here</SiteLink>.</p>
+            <p>I've worked at numerous companies, most recently in e-commerce, and have been programming since I was 14 years old. In fact, my earliest internship was more than {`${getDifferenceInYears(new Date('2013-08'), new Date())}`} years ago. <SiteLink href="https://www.linkedin.com/in/shreykumar/details/experience/" isExternal>More on that here</SiteLink>.</p>
             <p className="mb-2">Here are a few of the places I've worked at:</p>
             <ul className="mb-6">
                 {
                     companies.map(company => (
                         <li key={company.label} className="inline-block">
                             <SiteLink
-                                className="border border-purple-900 bg-blue-200 !text-black px-5 py-1 mr-2 mb-2 text-center inline-block rounded no-underline hover:underline"
+                                className="border border-moss-green bg-olivine text-moss-green px-5 py-1 mr-2 mb-2 text-center inline-block rounded no-underline hover:underline"
                                 href={company.link}
                                 isExternal
-                                externalClassName="dark:filter-none"
+                                externalClassName="fill-moss-green dark:filter-none"
                             >
                                 {company.label}
                             </SiteLink>
@@ -64,7 +64,7 @@ export default function About() {
                     ))
                 }
             </ul>
-            <p className="mb-4">That's it for now! Feel free to get in touch with me <SiteLink href="/contact">here</SiteLink> otherwise here's a picture of my dog Copper.</p>
+            <p className="mb-4">That's it for now! Feel free to get in touch with me <SiteLink href="/contact">here</SiteLink>—otherwise, here's a picture of my dog Copper.</p>
             <Image src={"/images/copper.jpg"} alt="Copper" width={300} height={400} className="rounded mb-8" />
 
         </Layout>
