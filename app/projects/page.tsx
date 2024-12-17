@@ -34,7 +34,7 @@ export default function Projects() {
         return (
             <div className="flex flex-wrap mt-2">
                 {skills.map((skill, index) => (
-                    <span key={index} className="border border-moss-green bg-olivine text-moss-green px-5 py-1 mr-2 mb-2 text-center inline-block rounded">{skill}</span>
+                    <span key={index} className="border border-golden-brown bg-hunyadi-yellow text-golden-brown px-5 py-1 mr-2 mb-2 text-center inline-block rounded">{skill}</span>
                 ))}
             </div>
         )
