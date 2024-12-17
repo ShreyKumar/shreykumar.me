@@ -26,7 +26,7 @@ export default function Projects() {
 
     const ProjectDescription = ({ children }: { children: React.ReactNode }) => {
         return (
-            <p className="min-h-28">{children}</p>
+            <p className="mb-5">{children}</p>
         )
     }
 
