@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Layout from "../components/Layout";
 import SiteLink from "../components/SiteLink";
-import ContactForm from "../components/ContactForm/ContactForm";
+import ContactForm from "../components/ContactForm";
 
 export const metadata: Metadata = {
     title: "ShreyKumar.me | Contact",
