@@ -6,7 +6,7 @@ const coachingPlaces = [
     {
         imageSrc: "/images/cf_logo.jpg",
         altText: "CareerFoundry logo",
-        description: "As a Mentor on CareerFoundry, I am providing actionable guidance to career switchers of various backgrounds looking to transition into tech. I help them with their job search, portfolio and more. I've seen clients go from stocking shelves at grocery stores to landing 6 figure Software Engineer jobs.",
+        description: "As a Mentor on CareerFoundry, I've provide actionable guidance to career switchers of various backgrounds looking to transition into tech. I've helped them with their job search, portfolio and more. I've seen clients go from stocking shelves at grocery stores to landing 6 figure Software Engineer jobs.",
         links: [
             { label: "CareerFoundry.com", link: "https://www.careerfoundry.com/" }
         ]
